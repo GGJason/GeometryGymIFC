@@ -511,10 +511,10 @@ namespace GeometryGym.Ifc
 		private double mRadius;// : IfcPositiveLengthMeasure;
 		public double Radius { get { return mRadius; } set { mRadius = value; } }
 
-		internal IfcCircle() : base() { }
-		internal IfcCircle(DatabaseIfc db, IfcCircle c) : base(db,c) { mRadius = c.mRadius; }
-		internal IfcCircle(DatabaseIfc db, double radius) : base(db.Factory.Origin2dPlace) { mRadius = radius; }
-		internal IfcCircle(IfcAxis2Placement ap, double radius) : base(ap) { mRadius = radius; }
+		public IfcCircle() : base() { }
+        public IfcCircle(DatabaseIfc db, IfcCircle c) : base(db,c) { mRadius = c.mRadius; }
+        public IfcCircle(DatabaseIfc db, double radius) : base(db.Factory.Origin2dPlace) { mRadius = radius; }
+		public IfcCircle(IfcAxis2Placement ap, double radius) : base(ap) { mRadius = radius; }
 		internal static IfcCircle Parse(string str) { IfcCircle c = new IfcCircle(); int pos = 0; c.Parse(str,ref pos, str.Length); return c; }
 		internal override void Parse(string str, ref int pos, int len)
 		{
@@ -902,11 +902,11 @@ namespace GeometryGym.Ifc
 		internal IfcColumnTypeEnum mPredefinedType = IfcColumnTypeEnum.NOTDEFINED;
 		public IfcColumnTypeEnum PredefinedType { get { return mPredefinedType; } set { mPredefinedType = value; } }
 
-		internal IfcColumnType() : base() { }
-		internal IfcColumnType(DatabaseIfc db, IfcColumnType t) : base(db,t) { mPredefinedType = t.mPredefinedType; }
+		public IfcColumnType() : base() { }
+        public IfcColumnType(DatabaseIfc db, IfcColumnType t) : base(db,t) { mPredefinedType = t.mPredefinedType; }
 		public IfcColumnType(DatabaseIfc m, string name, IfcColumnTypeEnum type) : base(m) { Name = name; mPredefinedType = type; }
 		public IfcColumnType(string name, IfcMaterialProfile ps, IfcColumnTypeEnum type) : this(name,new IfcMaterialProfileSet(ps.Name, ps), type) { }
-		internal IfcColumnType(string name, IfcMaterialProfileSet ps, IfcColumnTypeEnum type) : base(ps.mDatabase)
+        public IfcColumnType(string name, IfcMaterialProfileSet ps, IfcColumnTypeEnum type) : base(ps.mDatabase)
 		{
 			Name = name;
 			mPredefinedType = type;

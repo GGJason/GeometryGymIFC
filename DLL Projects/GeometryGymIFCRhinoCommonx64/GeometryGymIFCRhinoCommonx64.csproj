@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Rhino3dmIO, Version=5.1.30000.14, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Rhino3dmIO.dll-AnyCPU-Windows.5.1.30000.25\lib\net40\Rhino3dmIO.dll</HintPath>
       <Private>True</Private>
@@ -126,6 +129,81 @@
     </Compile>
     <Compile Include="..\..\Core\IFC\IFC Z.cs">
       <Link>IFC\Core\IFC Z.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\BaseClassIFC JSON.cs">
+      <Link>JSON\BaseClassIFC JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\DatabaseIFC JSON.cs">
+      <Link>JSON\DatabaseIFC JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC A JSON.cs">
+      <Link>JSON\IFC A JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC B JSON.cs">
+      <Link>JSON\IFC B JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC C JSON.cs">
+      <Link>JSON\IFC C JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC D JSON.cs">
+      <Link>JSON\IFC D JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC E JSON.cs">
+      <Link>JSON\IFC E JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC F JSON.cs">
+      <Link>JSON\IFC F JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC G JSON.cs">
+      <Link>JSON\IFC G JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC H JSON.cs">
+      <Link>JSON\IFC H JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC I JSON.cs">
+      <Link>JSON\IFC I JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC J JSON.cs">
+      <Link>JSON\IFC J JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC L JSON.cs">
+      <Link>JSON\IFC L JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC M JSON.cs">
+      <Link>JSON\IFC M JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC N JSON.cs">
+      <Link>JSON\IFC N JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC O JSON.cs">
+      <Link>JSON\IFC O JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC P JSON.cs">
+      <Link>JSON\IFC P JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC Q JSON.cs">
+      <Link>JSON\IFC Q JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC R JSON.cs">
+      <Link>JSON\IFC R JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC S JSON.cs">
+      <Link>JSON\IFC S JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC T JSON.cs">
+      <Link>JSON\IFC T JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC U JSON.cs">
+      <Link>JSON\IFC U JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC V JSON.cs">
+      <Link>JSON\IFC V JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC W JSON.cs">
+      <Link>JSON\IFC W JSON.cs</Link>
+    </Compile>
+    <Compile Include="..\..\core\ifc\json\IFC Z JSON.cs">
+      <Link>JSON\IFC Z JSON.cs</Link>
     </Compile>
     <Compile Include="..\..\Core\IFC\ParserIFC.cs">
       <Link>IFC\Core\ParserIFC.cs</Link>
@@ -293,6 +371,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeometryGymIFC\GeometryGymIFC.csproj">
+      <Project>{6cd3be38-25bc-4fcf-9426-d15ed4d4657c}</Project>
+      <Name>GeometryGymIFC</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

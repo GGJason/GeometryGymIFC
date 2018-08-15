@@ -188,3 +188,4 @@ FakesAssemblies/
 
 # Rhino
 *.rui_bak
+*.lock

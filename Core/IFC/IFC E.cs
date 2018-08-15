@@ -844,9 +844,9 @@ null, new[] { typeof(IfcObjectDefinition), typeof(IfcObjectPlacement), typeof(If
 	{
 		internal double mSemiAxis1;// : IfcPositiveLengthMeasure;
 		internal double mSemiAxis2;// : IfcPositiveLengthMeasure;
-		internal IfcEllipse() : base() { }
+		public IfcEllipse() : base() { }
 		internal IfcEllipse(DatabaseIfc db, IfcEllipse e) : base(db,e) { mSemiAxis1 = e.mSemiAxis1; mSemiAxis2 = e.mSemiAxis2; }
-		internal IfcEllipse(IfcAxis2Placement pl, double axis1, double axis2) : base(pl) { mSemiAxis1 = axis1; mSemiAxis2 = axis2; }
+		public IfcEllipse(IfcAxis2Placement pl, double axis1, double axis2) : base(pl) { mSemiAxis1 = axis1; mSemiAxis2 = axis2; }
 		internal static IfcEllipse Parse(string str) { IfcEllipse e = new IfcEllipse(); int pos = 0; e.Parse(str, ref pos, str.Length); return e; }
 		internal override void Parse(string str, ref int pos, int len)
 		{

@@ -1,4 +1,8 @@
-# GeometryGymIFC
+# GeometryGymIFC 
+
+Current Version: 0.0.14
+Forked by GGJason.
+
 C# classes to generate and parse OpenBIM IFC (Industry Foundation Class) files
 
 These classes simultaneously support IFC2x3, IFC4 and Infrastructure proposals 
@@ -19,3 +23,5 @@ https://github.com/BuildingSMART/IfcScript
 Please contact me in advance of making significant changes to the core code, as 
 it's possible existing code might be ported to the open source repository if I've
 already implemented it.
+## Examples Combination
+Thie fork of project includes exmaples from [jmirtsch/GeometryGymIFCExamples](https://github.com/jmirtsch/GeometryGymIFCExamples), [buildingSMART/IfcScript](https://github.com/BuildingSMART/IfcScript) and [GGJason/GeometryGymIFCExamples](https://github.com/GGJason/GeometryGymIFCExamples).
